@@ -9,7 +9,8 @@ namespace PracticeObjectOrientedDesign
     enum ShapeType
     {
         Circle,
-        Square
+        Square,
+        Triangle
     }
 
     internal class Program
@@ -28,6 +29,7 @@ namespace PracticeObjectOrientedDesign
                 SideLength = 10
             };
 
+           
             double circleArea = circle.CalculateArea();
             double squareArea = square.CalculateArea();
 

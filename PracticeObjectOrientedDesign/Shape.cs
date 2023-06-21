@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace PracticeObjectOrientedDesign
 {
+
+    interface ICalculateArea
+    {
+        double ICalculateArea();     
+    }
+
+
+
     class Shape
     {
         public ShapeType Type { get; set; }
@@ -17,15 +25,19 @@ namespace PracticeObjectOrientedDesign
         {
             double area = 0;
 
-            if (Type == ShapeType.Circle)
-            {
-                area = Math.PI * Radius * Radius;
-            }
-            else if (Type == ShapeType.Square)
-            {
-                area = SideLength * SideLength;
-            }
+            //if (Type == ShapeType.Circle)
+            //{
+            //    area = Math.PI * Radius * Radius;
+            //}
+            //else if (Type == ShapeType.Square)
+            //{
+            //    area = SideLength * SideLength;
+            //}
+          
             return area;
         }
+
+        
+
     }
 }
